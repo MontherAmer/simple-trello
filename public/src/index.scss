@@ -1,0 +1,100 @@
+@import './layouts/screens/Login/index.scss';
+@import './layouts/components/Alert/index.scss';
+@import './layouts/components/NavBar/index.scss';
+@import './layouts/screens/Home/index.scss';
+@import './layouts/components/Modal/index.scss';
+@import './layouts/components/New_Board/index.scss';
+@import './layouts/components/Board_Thumbnail/index.scss';
+@import './layouts/components/Loader/index.scss';
+@import './layouts/screens/Board/index.scss';
+@import './layouts/components/Board_Menu/index.scss';
+@import './layouts/components/RoundedImage/index.scss';
+@import './layouts/components/NewCardList/index.scss';
+@import './layouts/components/List/index.scss';
+@import './layouts/components/Card/index.scss';
+@import './layouts/components/RemoveList/index.scss';
+@import './layouts/components/UpdateCard/index.scss';
+
+html,
+body {
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #fafbfc;
+  color: #172b4d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  height: 100%;
+}
+
+.App {
+  height: 100%;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+// update card sections title
+h3 {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+// update card actions titles
+h5 {
+  font-size: 12px;
+  color: #5e6c84;
+  font-weight: 700;
+}
+// scrollbar style
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.containerx {
+  align-items: flex-start;
+  background-color: rgba(0, 0, 0, 0.64);
+  // display: none;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+}
