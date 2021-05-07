@@ -1,0 +1,32 @@
+.new-board {
+  background-color: transparent;
+  width: 310px;
+}
+
+.color-item {
+  width: 31px;
+  height: 31px;
+  border-radius: 5px;
+  margin: 8px 0px;
+  cursor: pointer;
+}
+
+.color-item.selected {
+  border: 2px solid white;
+}
+
+.new-board__input {
+  margin: 0 0 8px;
+  background: #edeff0;
+  padding: 0.5em;
+  max-width: 400px;
+  font-size: 14px;
+  background-color: #fafbfc;
+  border: 2px solid #dfe1e6;
+  box-sizing: border-box;
+  border-radius: 3px;
+  height: 44px;
+  transition: background-color 0.2s ease-in-out 0s, border-color 0.2s ease-in-out 0s;
+  width: 100%;
+  outline-color: #157ac7;
+}
