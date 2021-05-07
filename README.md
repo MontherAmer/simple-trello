@@ -4,7 +4,7 @@ Kanban is a simple trello app build using ExpressJS an ReactJS.
 
 ![](preview.gif)
 
-### [Demo](https://simple-trello123.herokuapp.com/)
+### [Demo](http://simple-trillo.herokuapp.com/)
 
 ### Installation
 
