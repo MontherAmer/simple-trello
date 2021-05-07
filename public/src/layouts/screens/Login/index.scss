@@ -1,0 +1,121 @@
+// auth components styles
+.auth-logo {
+  width: 100px;
+  margin-top: 32px;
+}
+
+.auth-title {
+  color: #157ac7;
+  margin-top: 4px;
+}
+
+.auth-form__container {
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 0 10px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+  background-color: #ffffff;
+  width: 400px;
+}
+
+.auth-form__header {
+  text-align: center;
+  color: #5e6c84;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 28px;
+  // font-family: 'Courgette', cursive;
+}
+
+.auth-form__link {
+  // font-family: 'Blinker', sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  color: #0052cc;
+}
+
+.auth-form__input {
+  margin: 0 0 1.2em;
+  background: #edeff0;
+  padding: 0.5em;
+  max-width: 400px;
+  font-size: 14px;
+  background-color: #fafbfc;
+  border: 2px solid #dfe1e6;
+  box-sizing: border-box;
+  border-radius: 3px;
+  height: 44px;
+  transition: background-color 0.2s ease-in-out 0s, border-color 0.2s ease-in-out 0s;
+  width: 100%;
+  outline-color: #157ac7;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 350px;
+  margin: 0px;
+  color: #7d8592;
+}
+.separator::before,
+.separator::after {
+  margin: 0 8px;
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #7d8592;
+}
+
+.google-login {
+  background-color: #ee4a36;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  border-radius: 0.2rem;
+}
+
+.google-login > div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.fb-login {
+  background-color: #385c8e;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  border-radius: 0.2rem;
+}
+
+.fb-login:hover {
+  color: #ffffff;
+  opacity: 0.8;
+  text-decoration: none;
+}
+.google-login:hover {
+  color: #ffffff;
+  opacity: 0.8;
+  text-decoration: none;
+}
+.fb-login > div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
