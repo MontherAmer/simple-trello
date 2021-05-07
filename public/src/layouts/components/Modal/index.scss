@@ -1,0 +1,20 @@
+.modal {
+  height: calc(100% + 80px);
+  width: 100%;
+  background-color: hsla(0, 2%, 10%, 0.83);
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 10;
+  padding-top: 80px;
+  overflow-y: auto;
+}
+
+// #in {
+//   height: 200px;
+//   margin: 48px 0 80px;
+// }
