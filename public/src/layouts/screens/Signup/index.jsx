@@ -82,12 +82,12 @@ const Signup = () => {
               <p>Google</p>
             </div>
           </a>
-          <a href="api/auth/facebook" className="fb-login">
+          {/* <a href="api/auth/facebook" className="fb-login">
             <GrFacebookOption />
             <div>
               <p>Facebook</p>
             </div>
-          </a>
+          </a> */}
         </div>
       </div>
     </div>
