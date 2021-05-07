@@ -1,0 +1,41 @@
+.thumbnail {
+  width: 165px;
+  height: 95px;
+  margin: 4px 16px 4px 0px;
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #ffffff;
+  cursor: pointer;
+  position: relative;
+}
+
+.thumbnail-title {
+  color: #ffffff;
+}
+
+.thumbnail-footer {
+  position: absolute;
+  bottom: 3px;
+  right: 3px;
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #d6ae1e;
+  font-size: 20px;
+}
+.thumbnail-footer:hover {
+  font-size: 23px;
+}
+
+@media (max-width: 425px) {
+  .thumbnail {
+    width: 126px;
+    height: 80px;
+    margin: 4px 8px 4px 0px;
+  }
+}
