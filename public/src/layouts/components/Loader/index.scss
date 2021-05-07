@@ -1,0 +1,46 @@
+.loader-container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+  background-color: #eeeeee;
+  // overflow: hidden;
+}
+
+@keyframes arrows {
+  0%,
+  100% {
+    color: black;
+    transform: translateY(0);
+  }
+  50% {
+    color: #000000;
+    transform: translateY(20px);
+  }
+}
+
+.loader-item {
+  --delay: 0s;
+  animation: arrows 1s var(--delay) infinite ease-in;
+}
+
+.loader-item:nth-child(2) {
+  --delay: 0.1s;
+}
+
+.loader-item:nth-child(3) {
+  --delay: 0.2s;
+}
+
+.loader-item:nth-child(4) {
+  --delay: 0.3s;
+}
+
+.loader-item:nth-child(5) {
+  --delay: 0.4s;
+}
