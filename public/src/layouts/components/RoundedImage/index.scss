@@ -1,0 +1,26 @@
+.rounded-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50% !important;
+  background-color: #dfe1e6;
+  cursor: default;
+  font-weight: 700;
+  color: #1d2b4d;
+}
+
+.rounded-img.larg {
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+}
+
+.rounded-img.small {
+  width: 35px;
+  height: 35px;
+  font-size: 20px;
+}
+
+.rounded-img:hover {
+  background-color: #c1c7d0;
+}
