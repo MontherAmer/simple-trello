@@ -1,0 +1,418 @@
+.card-update {
+  background-color: #f4f5f7;
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+  width: 768px;
+  padding: 32px;
+  margin-bottom: 20px;
+}
+
+.card-update-container {
+  display: flex;
+  width: 100%;
+}
+
+.left-side-update {
+  width: 75%;
+  padding-right: 8px;
+}
+
+.right-side-update {
+  width: 25%;
+}
+
+.card-update__close {
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 32px;
+  overflow: hidden;
+  padding: 4px;
+  margin: 4px;
+  width: 32px;
+  z-index: 1;
+  transition: background-color 85ms, color 85ms;
+  cursor: pointer;
+}
+
+.card-update__close:hover {
+  background-color: rgba(9, 30, 66, 0.08);
+}
+
+.card-update-header {
+  display: flex;
+  align-items: center;
+  padding: 0 32px;
+}
+
+.card-update-header > img {
+  margin-right: 8px;
+  height: 25px;
+}
+
+.update-card-title {
+  background: transparent;
+  border-radius: 3px;
+  font-size: 17px;
+  font-weight: 600;
+  height: 32px;
+  padding: 0;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  height: 32px;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.update-card-title:focus {
+  background-color: #fff;
+  box-shadow: inset 0 0 0 2px #0079bf;
+  padding: 4px 8px;
+}
+
+.card-update-members {
+  padding-left: 67px;
+  display: flex;
+}
+
+.card-update-members input {
+  background-color: #fff;
+  box-shadow: inset 0 0 0 2px #0079bf;
+  padding: 4px 8px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+}
+
+.card-update-members .dropdown-menu {
+  min-width: 300px;
+  padding: 4px 8px;
+}
+
+.card-update-details {
+  padding-left: 67px;
+}
+
+.description-placeholder {
+  background-color: rgba(9, 30, 66, 0.04);
+  box-shadow: none;
+  border: none;
+  border-radius: 3px;
+  display: block;
+  min-height: 40px;
+  padding: 8px 12px;
+  text-decoration: none;
+  height: 55px;
+}
+
+.card-update-description {
+  margin: 0;
+  color: #172b4d;
+  font-size: 14px;
+  font-weight: 400;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 3px;
+  line-height: 20px;
+  padding: 8px 12px;
+  transition-property: background-color, border-color, box-shadow;
+  transition-duration: 85ms;
+  transition-timing-function: ease;
+  width: 100%;
+  border-color: rgba(9, 30, 66, 0.13);
+  margin-bottom: 4px;
+  display: block;
+  min-height: 108px;
+  background: #fff;
+  box-shadow: none;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  resize: none;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  resize: none;
+  box-shadow: inset 0 0 0 2px #0079bf;
+}
+
+.action-button {
+  color: #172b4d;
+  background-color: rgba(9, 30, 66, 0.04);
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  height: 32px;
+  margin-top: 8px;
+  padding: 6px 12px;
+  position: relative;
+  transition-property: background-color, border-color, box-shadow;
+  transition-duration: 85ms;
+  transition-timing-function: ease;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.action-button:hover {
+  background-color: rgba(9, 30, 66, 0.08);
+}
+
+.action-button > img {
+  height: 16px;
+  color: #172b4d;
+  fill: #172b4d;
+}
+
+.action-button > p {
+  font-size: 12px;
+  line-height: 1.9;
+  font-weight: 400;
+  color: #172b4d;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 180px;
+  overflow: auto;
+  width: 120%;
+}
+
+.img-thumbnail {
+  height: 85px;
+  width: 144px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 8px;
+  margin-bottom: 8px;
+}
+
+.img-thumbnail > img {
+  max-width: 99%;
+  max-height: 99%;
+}
+
+.image-full {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 25;
+  padding: 50px;
+  background-color: hsla(0, 2%, 10%, 0.83);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-full > img {
+  height: 75%;
+}
+
+.img-preview-remove {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.action-dropdown {
+  left: -73px !important;
+  min-width: 300px;
+  padding: 4px 8px;
+}
+.action-dropdown > input {
+  width: 100%;
+}
+
+.labels-container {
+  display: flex;
+  justify-content: center;
+}
+
+.label-container {
+  height: 35px;
+  width: 40px;
+  margin-right: 4px;
+  border: 2px solid transparent;
+  border-radius: 2px;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+}
+
+.label-container.selected {
+  border: 2px solid #0079bf;
+}
+
+.card-update-placeholder {
+  height: 16px;
+}
+
+.comment-input {
+  width: 100%;
+  height: 35px;
+  background-color: #fff;
+  box-shadow: inset 0 0 0 2px #0079bf;
+  padding: 4px 8px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+}
+
+.comment {
+  width: 100%;
+  border-bottom: 1px solid #c1c7d0;
+  position: relative;
+}
+
+.comment-delete {
+  display: none;
+}
+
+.comment:hover {
+  background-color: rgba(9, 30, 66, 0.04);
+}
+
+.comment:hover > .comment-delete {
+  display: inline-block;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  cursor: pointer;
+}
+
+.checklist-input {
+  background-color: #fff;
+  box-shadow: inset 0 0 0 2px #0079bf;
+  padding: 4px 8px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+}
+
+.checklist-close {
+  border-radius: 3px;
+  height: 32px;
+  overflow: hidden;
+  padding: 4px;
+  margin: 4px;
+  width: 32px;
+  z-index: 1;
+  transition: background-color 85ms, color 85ms;
+  cursor: pointer;
+}
+.checklist-close:hover {
+  background-color: rgba(9, 30, 66, 0.08);
+}
+
+.check-item {
+  display: flex;
+  align-items: center;
+  height: 36px;
+  border-radius: 3px;
+  padding: 4px 8px;
+  font-size: 14px;
+}
+
+.check-item:hover {
+  background-color: rgba(9, 30, 66, 0.04);
+}
+
+.check-label {
+  color: #172b4d;
+  border-radius: 2px;
+  height: 18px;
+  width: 18px;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+  background-color: #fafbfc;
+  box-shadow: inset 0 0 0 2px #dfe1e6;
+  text-align: center;
+  cursor: pointer;
+}
+
+.check-text {
+  color: #172b4d;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  cursor: pointer;
+  padding: 6px 0;
+  width: 100%;
+  margin-left: 16px;
+}
+
+.check-label.checked {
+  background-color: #1979be;
+  box-shadow: inset 0 0 0 2px #1979be;
+  opacity: 1;
+  content: url('../../../assets/check.svg');
+}
+
+input[type='range'] {
+  // -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 100%; /* Specific width is required for Firefox. */
+  background: transparent; /* Otherwise white in Chrome */
+  height: 8px;
+}
+
+input[type='range']:focus {
+  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+input[type='range']::-ms-track {
+  width: 100%;
+  cursor: pointer;
+}
+
+/* Special styling for WebKit/Blink */
+input[type='range']::-webkit-slider-thumb {
+  max-width: 8px;
+  max-height: 8px;
+}
+
+@media (max-width: 768px) {
+  .card-update {
+    width: 750px;
+    padding: 32px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  .card-update {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+  }
+
+  .card-update-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left-side-update {
+    width: 100%;
+    padding: 8px;
+  }
+
+  .right-side-update {
+    width: 100%;
+    padding: 8px;
+  }
+
+  #in {
+    width: 95%;
+  }
+  .card-update-placeholder {
+    height: 8px;
+  }
+}
