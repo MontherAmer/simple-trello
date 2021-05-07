@@ -1,0 +1,33 @@
+.card {
+  padding: 6px 8px 2px;
+  cursor: pointer !important;
+  margin-bottom: 8px;
+  outline: none;
+  transition: background 85ms ease;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.card-thumbnail-label {
+  width: 40px;
+  height: 6px;
+  border-radius: 4px;
+  margin-bottom: 4px;
+}
+
+.card-thumbnail-icons {
+  color: #959da1;
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
+  font-size: 14px;
+}
+
+.card-thumbnail-icons > img {
+  height: 19px;
+}
+
+// .card-paragragh {
+//   margin: 4px 0px;
+// }
